@@ -2,12 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Weather.css";
 import Loader from "react-loader-spinner";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
@@ -18,6 +18,8 @@ export default function Weather(props) {
       country: response.data.sys.country,
       description: response.data.weather[0].main,
       icon: response.data.weather[0].icon,
+      date: new Date(response.data.dt * 1000),
+      timeZoneOffsetSearchedCity: response.data.timezone, // Needed to calculate the local hour and date - timeZoneOffsetSearchedCity exprimé en secondes
     });
   }
 
@@ -32,7 +34,14 @@ export default function Weather(props) {
           <h1>
             {weatherData.city}, {weatherData.country}
           </h1>
-          <h2>Wednesday | June, 16 | 08h58</h2>
+          <h2>
+            <FormattedDate
+              date={weatherData.date}
+              timeZoneOffsetSearchedCity={
+                weatherData.timeZoneOffsetSearchedCity
+              }
+            />
+          </h2>
           <div className="row">
             <div className="col-5">
               <div className="row current-weather-description">
