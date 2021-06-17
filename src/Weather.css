@@ -1,0 +1,79 @@
+.Weather {
+  background-image: url("./pexels-soly-moses-5897476.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 30px auto 10px;
+  max-height: 800px;
+  min-height: 800px;
+  padding: 24px;
+}
+
+.Weather form {
+  display: block;
+  margin: 8px auto;
+}
+
+.Weather input {
+  border-radius: 8px;
+  border-width: 0px;
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+.Weather h1 {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Weather h2 {
+  color: darkblue;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 0;
+  text-shadow: 0 0 7px white;
+}
+
+.Weather .current-weather-description {
+  font-size: 24px;
+  margin: 0 auto;
+}
+.Weather .current-temperature {
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+  top: -16px;
+}
+
+.Weather .unit {
+  padding: 0;
+}
+
+.Weather #weather-icon {
+  position: relative;
+  left: -32px;
+  bottom: -18px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  list-style: none;
+  text-align: left;
+}
+
+.Weather footer {
+  font-size: 12px;
+}
+
+.Weather a {
+  color: rgb(247, 92, 208);
+}

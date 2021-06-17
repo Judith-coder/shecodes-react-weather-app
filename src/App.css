@@ -1,0 +1,13 @@
+.App {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 500px;
+  text-align: center;
+}
+
+.App footer {
+  font-size: 12px;
+}
+
+.App a {
+  color: rgb(247, 92, 208);
+}
