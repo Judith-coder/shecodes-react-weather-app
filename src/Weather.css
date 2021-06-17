@@ -77,3 +77,7 @@
 .Weather a {
   color: rgb(247, 92, 208);
 }
+
+.Weather #loader {
+  margin: 0 auto;
+}
