@@ -54,10 +54,22 @@
   padding: 0;
 }
 
-.Weather #weather-icon {
+.weather-icon .wi {
+  color: black;
+  font-size: 62px;
   position: relative;
-  left: -32px;
-  bottom: -18px;
+  left: -48px;
+  bottom: -24px;
+}
+
+.weather-icon .wi.day {
+  color: #fff5b7;
+  text-shadow: 1px 0 2px #005f99;
+}
+
+.weather-icon .wi.night {
+  color: #4a47a3;
+  text-shadow: 1px 0 2px #fb9300;
 }
 
 .Weather ul {
