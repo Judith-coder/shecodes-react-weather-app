@@ -1,0 +1,45 @@
+.WeatherHourlyForecast,
+.WeatherDailyForecast {
+  text-align: center;
+}
+
+.WeatherHourlyForecast .card-body,
+.WeatherDailyForecast .card-body {
+  padding: 8px;
+}
+
+.WeatherHourlyForecast .WeatherForecast-heading {
+  margin-top: 200px;
+}
+
+.WeatherDailyForecast .WeatherForecast-heading {
+  margin-top: 24px;
+}
+
+.WeatherHourlyForecast .WeatherForecast-heading,
+.WeatherDailyForecast .WeatherForecast-heading {
+  color: white;
+  font-size: 22px;
+  text-shadow: 1px 0px 2px black;
+}
+
+.WeatherHourlyForecast .WeatherForecast-hour {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.WeatherDailyForecast .WeatherForecast-day {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.WeatherHourlyForecast .WeatherForecast-icon,
+.WeatherDailyForecast .WeatherForecast-icon {
+  font-size: 56px;
+}
+
+.WeatherHourlyForecast .WeatherForecast-temperature,
+.WeatherDailyForecast .WeatherForecast-temperature {
+  font-size: 18px;
+  margin-bottom: 0;
+}

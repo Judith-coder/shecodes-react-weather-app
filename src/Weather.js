@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./Weather.css";
 import Loader from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo";
+import WeatherHourlyForecast from "./WeatherHourlyForecast";
+import WeatherDailyForecast from "./WeatherDailyForecast";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
@@ -65,6 +67,8 @@ export default function Weather(props) {
             <input type="submit" value="Search"></input>
           </form>
           <WeatherInfo data={weatherData} />
+          <WeatherHourlyForecast />
+          <WeatherDailyForecast />
         </div>
       </div>
     );
