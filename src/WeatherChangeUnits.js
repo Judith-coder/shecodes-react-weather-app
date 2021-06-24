@@ -38,7 +38,12 @@ export default function WeatherChangeUnits(props) {
           </div>
           <div className=" col-4 unit">
             <div onClick={showCelsius}>
-              <input type="radio" id="celsius" checked={chooseCelsius}></input>{" "}
+              <input
+                type="radio"
+                id="celsius"
+                checked={chooseCelsius}
+                onChange={showCelsius}
+              ></input>{" "}
               <label for="celsius">°C</label>
             </div>
             <div onClick={showFahrenheit}>
@@ -46,6 +51,7 @@ export default function WeatherChangeUnits(props) {
                 type="radio"
                 id="fahrenheit"
                 checked={chooseFahrenheit}
+                onChange={showFahrenheit}
               ></input>{" "}
               <label for="fahrenheit">°F</label>
             </div>

@@ -24,8 +24,8 @@ export default function FormattedDate(props) {
     "Friday",
     "Saturday",
   ];
-  let currentTime = new Date();
-  let currentLocationTimeZoneOffset = currentTime.getTimezoneOffset(); // Time zone offset provided in minutes
+
+  let currentLocationTimeZoneOffset = props.date.getTimezoneOffset(); // Time zone offset provided in minutes
 
   let month = props.date.getMonth();
   let day = props.date.getDay();

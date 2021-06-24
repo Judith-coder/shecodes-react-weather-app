@@ -21,7 +21,7 @@ export default function Weather(props) {
       country: response.data.sys.country,
       description: response.data.weather[0].main,
       icon: response.data.weather[0].icon,
-      date: new Date(response.data.dt * 1000),
+      date: new Date(),
       timeZoneOffsetSearchedCity: response.data.timezone, // Needed to calculate the local hour and date - timeZoneOffsetSearchedCity exprimé en secondes
     });
   }

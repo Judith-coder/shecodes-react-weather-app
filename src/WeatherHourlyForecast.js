@@ -39,7 +39,7 @@ export default function WeatherHourlyForecast(props) {
         <h4 className="WeatherForecast-hour">{hour()}</h4>
         <WeatherIcon
           code={props.data.weather[0].icon}
-          size={70}
+          size={32}
           className="WeatherForecast-icon"
         />
         <p className="WeatherForecast-temperature">{temperature()}</p>
