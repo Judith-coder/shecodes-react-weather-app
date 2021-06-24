@@ -7,7 +7,7 @@
 }
 
 .WeatherForecast .WeatherForecast-heading {
-  margin-top: 44px;
+  margin-top: 38px;
   text-align: left;
 }
 
@@ -37,7 +37,8 @@
 }
 
 .WeatherForecast .col {
-  padding-right: 0;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .WeatherForecast .card-body {
