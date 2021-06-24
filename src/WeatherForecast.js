@@ -18,14 +18,54 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="WeatherForecast">
-        <WeatherHourlyForecast
-          data={forecastDataHours}
-          timeZoneOffsetSearchedCity={props.timeZoneOffsetSearchedCity}
-        />
-        <WeatherDailyForecast
-          data={forecastDataDays}
-          timeZoneOffsetSearchedCity={props.timeZoneOffsetSearchedCity}
-        />
+        <div className="WeatherHourlyForecast">
+          <h3 className="WeatherForecast-heading">Next hours forecast</h3>
+          <div className="row">
+            {forecastDataHours.map(function (hourlyForecast, index) {
+              if (
+                index === 2 ||
+                index === 4 ||
+                index === 6 ||
+                index === 8 ||
+                index === 10
+              ) {
+                return (
+                  <div className="col" key={index}>
+                    <WeatherHourlyForecast
+                      data={hourlyForecast}
+                      timeZoneOffsetSearchedCity={
+                        props.timeZoneOffsetSearchedCity
+                      }
+                    />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
+        </div>
+        <div className="WeatherDailyForecast">
+          <h3 className="WeatherForecast-heading">Next days forecast</h3>
+          <div className="row">
+            {forecastDataDays.map(function (dailyForecast, index) {
+              if (index >= 1 && index < 6) {
+                return (
+                  <div className="col" key={index}>
+                    <WeatherDailyForecast
+                      data={dailyForecast}
+                      timeZoneOffsetSearchedCity={
+                        props.timeZoneOffsetSearchedCity
+                      }
+                    />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
+        </div>
       </div>
     );
   } else {

@@ -7,12 +7,12 @@
 }
 
 .WeatherForecast .WeatherForecast-heading {
-  margin-top: 24px;
+  margin-top: 44px;
   text-align: left;
 }
 
 .WeatherHourlyForecast .WeatherForecast-heading {
-  margin-top: 180px;
+  margin-top: 160px;
 }
 
 .WeatherForecast .WeatherForecast-heading {
@@ -22,20 +22,28 @@
 }
 
 .WeatherHourlyForecast .WeatherForecast-hour {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .WeatherDailyForecast .WeatherForecast-day {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
 }
 
-.WeatherForecast .WeatherForecast-icon {
-  font-size: 56px;
+.WeatherForecast .WeatherForecast-temperature {
+  font-size: 13px;
+  margin-bottom: 0;
 }
 
-.WeatherForecast .WeatherForecast-temperature {
-  font-size: 18px;
-  margin-bottom: 0;
+.WeatherForecast .col {
+  padding-right: 0;
+}
+
+.WeatherForecast .card-body {
+  padding: 12px 8px;
+}
+
+.WeatherForecast .wi {
+  font-size: 20px;
 }

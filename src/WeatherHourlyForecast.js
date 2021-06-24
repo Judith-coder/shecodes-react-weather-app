@@ -4,12 +4,12 @@ import "./WeatherForecast.css";
 
 export default function WeatherHourlyForecast(props) {
   function temperature() {
-    let temperature = Math.round(props.data[0].temp);
+    let temperature = Math.round(props.data.temp);
     return `${temperature}°`;
   }
 
   function hour() {
-    let date = new Date(props.data[3].dt * 1000);
+    let date = new Date(props.data.dt * 1000);
     let currentTime = new Date();
     let currentLocationTimeZoneOffset = currentTime.getTimezoneOffset();
     let hour =
@@ -34,20 +34,15 @@ export default function WeatherHourlyForecast(props) {
   }
 
   return (
-    <div className="WeatherHourlyForecast">
-      <h3 className="WeatherForecast-heading">Next hours forecast</h3>
-      <div className="card">
-        <div className="card-body">
-          <div className="row">
-            <h4 className="WeatherForecast-hour">{hour()}</h4>
-            <WeatherIcon
-              code={props.data[0].weather[0].icon}
-              size={32}
-              className="WeatherForecast-icon"
-            />
-            <p className="WeatherForecast-temperature">{temperature()}</p>
-          </div>
-        </div>
+    <div className="card">
+      <div className="card-body">
+        <h4 className="WeatherForecast-hour">{hour()}</h4>
+        <WeatherIcon
+          code={props.data.weather[0].icon}
+          size={70}
+          className="WeatherForecast-icon"
+        />
+        <p className="WeatherForecast-temperature">{temperature()}</p>
       </div>
     </div>
   );
