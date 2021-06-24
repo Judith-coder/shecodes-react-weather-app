@@ -13,6 +13,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       feels_like: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -67,8 +68,8 @@ export default function Weather(props) {
             <input type="submit" value="Search"></input>
           </form>
           <WeatherInfo data={weatherData} />
-          <WeatherHourlyForecast />
-          <WeatherDailyForecast />
+          <WeatherHourlyForecast coordinates={weatherData.coordinates} />
+          <WeatherDailyForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );
