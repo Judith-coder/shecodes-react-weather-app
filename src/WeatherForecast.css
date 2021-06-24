@@ -1,23 +1,21 @@
-.WeatherHourlyForecast,
-.WeatherDailyForecast {
+.WeatherForecast {
   text-align: center;
 }
 
-.WeatherHourlyForecast .card-body,
-.WeatherDailyForecast .card-body {
+.WeatherForecast .card-body {
   padding: 8px;
 }
 
-.WeatherHourlyForecast .WeatherForecast-heading {
-  margin-top: 200px;
-}
-
-.WeatherDailyForecast .WeatherForecast-heading {
+.WeatherForecast .WeatherForecast-heading {
   margin-top: 24px;
+  text-align: left;
 }
 
-.WeatherHourlyForecast .WeatherForecast-heading,
-.WeatherDailyForecast .WeatherForecast-heading {
+.WeatherHourlyForecast .WeatherForecast-heading {
+  margin-top: 180px;
+}
+
+.WeatherForecast .WeatherForecast-heading {
   color: white;
   font-size: 22px;
   text-shadow: 1px 0px 2px black;
@@ -33,13 +31,11 @@
   font-weight: bold;
 }
 
-.WeatherHourlyForecast .WeatherForecast-icon,
-.WeatherDailyForecast .WeatherForecast-icon {
+.WeatherForecast .WeatherForecast-icon {
   font-size: 56px;
 }
 
-.WeatherHourlyForecast .WeatherForecast-temperature,
-.WeatherDailyForecast .WeatherForecast-temperature {
+.WeatherForecast .WeatherForecast-temperature {
   font-size: 18px;
   margin-bottom: 0;
 }
