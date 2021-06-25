@@ -48,3 +48,27 @@
 .WeatherForecast .wi {
   font-size: 20px;
 }
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 370px) {
+  .WeatherHourlyForecast .WeatherForecast-heading {
+    margin-top: 200px;
+  }
+  .WeatherForecast #card-body-hourly-forecast,
+  .WeatherForecast #card-body-daily-forecast {
+    padding: 12px 2px;
+  }
+
+  .WeatherHourlyForecast .WeatherForecast-hour,
+  .WeatherDailyForecast .WeatherForecast-day {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 425px) {
+  .WeatherForecast #card-body-hourly-forecast,
+  .WeatherForecast #card-body-daily-forecast {
+    padding: 12px 2px;
+  }
+}

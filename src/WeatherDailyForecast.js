@@ -20,7 +20,7 @@ export default function WeatherHourlyForecast(props) {
 
   return (
     <div className="card">
-      <div className="card-body">
+      <div className="card-body" id="card-body-hourly-forecast">
         <h4 className="WeatherForecast-day">{day()}</h4>
         <WeatherIcon
           code={props.data.weather[0].icon}

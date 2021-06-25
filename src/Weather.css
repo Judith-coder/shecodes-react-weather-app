@@ -93,3 +93,105 @@
 .Weather #loader {
   margin: 0 auto;
 }
+
+/* ------- RESPONSIVE DESIGN ----------- */
+
+/*  RESPONSIVE DESIGN (large cell phones) */
+@media screen and (max-width: 425px) {
+  .Weather {
+    margin: 0;
+  }
+
+  .Weather .current-weather-description {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+  .Weather .current-temperature {
+    font-size: 44px;
+    font-weight: bold;
+    position: relative;
+    top: -12px;
+  }
+
+  .Weather .unit {
+    position: relative;
+    right: -15px;
+  }
+
+  .Weather .unit {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .WeatherChangeUnits #celsius,
+  .WeatherChangeUnits #fahrenheit {
+    margin: 0;
+    height: 12px;
+    width: 12px;
+  }
+
+  .weather-icon .wi {
+    font-size: 58px;
+    position: relative;
+    left: -35px;
+    bottom: -18px;
+  }
+}
+
+/* RESPONSIVE DESIGN (narrow cell phones) */
+
+@media screen and (max-width: 350px) {
+  .Weather {
+    margin: 0;
+  }
+
+  .Weather input {
+    max-width: 150px;
+  }
+
+  .Weather h1 {
+    font-size: 18px;
+  }
+
+  .Weather h2 {
+    font-size: 13px;
+  }
+
+  .Weather .current-weather-description {
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+  .Weather .current-temperature {
+    font-size: 34px;
+    font-weight: bold;
+    position: relative;
+    top: -11px;
+  }
+
+  .Weather .unit {
+    font-size: 12px;
+    padding: 0;
+    position: relative;
+    right: -10px;
+  }
+
+  .WeatherChangeUnits #celsius,
+  .WeatherChangeUnits #fahrenheit {
+    margin: 0;
+    height: 10px;
+    width: 10px;
+  }
+
+  .weather-icon .wi {
+    font-size: 46px;
+    position: relative;
+    left: -32px;
+    bottom: -18px;
+  }
+
+  .Weather h3 {
+    font-size: 17px;
+  }
+}

@@ -12,3 +12,29 @@
 .App a {
   color: rgb(247, 92, 208);
 }
+
+@media screen and (max-width: 425px) {
+  #main-container {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .App footer {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #main-container {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .App footer {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
