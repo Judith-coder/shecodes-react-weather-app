@@ -23,6 +23,7 @@ function App() {
           >
             GitHub
           </a>
+          <div id="copyrightPhoto">Photo by Soly Moses from Pexels</div>
         </footer>
       </div>
     </div>

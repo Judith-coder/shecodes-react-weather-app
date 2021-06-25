@@ -12,7 +12,9 @@
 .App a {
   color: rgb(247, 92, 208);
 }
+/* ------- RESPONSIVE DESIGN ----------- */
 
+/*  RESPONSIVE DESIGN (large cell phones) */
 @media screen and (max-width: 425px) {
   #main-container {
     font-size: 15px;
@@ -26,6 +28,7 @@
   }
 }
 
+/*  RESPONSIVE DESIGN (narrow cell phones) */
 @media screen and (max-width: 350px) {
   #main-container {
     font-size: 12px;
